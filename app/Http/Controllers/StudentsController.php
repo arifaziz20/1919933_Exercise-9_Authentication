@@ -4,10 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Students;
+// use App\Http\Controllers\View;
+// use App\Http\Controllers\Auth;
 
 const STDT = '/students';
 class StudentsController extends Controller
 {
+
+    // public function __construct()
+    // {
+    // $this->middleware('auth', ['except' => ['welcome']]);
+    // }
+
     /**
      * Display a listing of the resource.
      *
@@ -17,6 +25,9 @@ class StudentsController extends Controller
     {
         $students = Students::all();
         return view('students.index', compact('students'));
+        // return view('students.index', compact('students'));
+        // return View::make('students.index')->with (compact('students'));
+
     }
 
     /**

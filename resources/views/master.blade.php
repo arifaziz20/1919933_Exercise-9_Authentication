@@ -11,8 +11,8 @@
 
    {{-- template  --}}
   <meta charset="utf-8" />
-  <link rel="apple-icon" sizes="76x76" href="{{asset('./assets/img/school.png')}}">
-  <link rel="icon" type="image/png" href="{{asset('./assets/img/school.png')}}">
+  <link rel="apple-icon" sizes="76x76" href="{{asset('./assets/img/uia2.png')}}">
+  <link rel="icon" type="image/png" href="{{asset('./assets/img/uia2.png')}}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -82,6 +82,7 @@
                   <span class="navbar-toggler-bar bar1"></span>
                   <span class="navbar-toggler-bar bar2"></span>
                   <span class="navbar-toggler-bar bar3"></span>
+
                 </button>
               </div>
               <a class="navbar-brand" href="javascript:;">Students</a>
@@ -117,6 +118,9 @@
                   </div>
                 </li>
               </ul>
+              {{-- <a href="{{ route('welcome') }}" style="background-color:azure; border: solid 1px rgb(2, 2, 2); padding:10px;">Homepage</a>
+              &nbsp&nbsp --}}
+              <a href="{{ route('dashboard') }}" style="background-color:azure; border: solid 1px rgb(2, 2, 2); padding:10px;" >Dashboard</a>
             </div>
           </div>
         </nav>
